@@ -6,24 +6,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //****************STACKS****************
-        StackDemo s = new StackDemo(5);
 
-        System.out.println(s.isFull());
-
-        s.push(1);
-        s.push(1);
-        s.push(1);
-        s.push(1);
-        s.push(1);
-        s.push(6);
-        System.out.println(s.size());
-        s.display();
-
-
-
-        s.push(7);
-        System.out.println(s.size());
-        s.display();
+//        StackDemo s = new StackDemo(5);
+//
+//        System.out.println(s.isFull());
+//
+//        s.push(1);
+//        s.push(1);
+//        s.push(1);
+//        s.push(1);
+//        s.push(1);
+//        s.push(6);
+//        System.out.println(s.size());
+//        s.display();
+//
+//
+//
+//        s.push(7);
+//        System.out.println(s.size());
+//        s.display();
 
         //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 //        Scanner sc = new Scanner(System.in);
@@ -54,6 +55,31 @@ public class Main {
 //        QueueDemo<Integer> integerQueueDemo = new QueueDemo<>(6);
 //        System.out.println(integerQueueDemo.size());
 //        integerQueueDemo.display();
+
+        //**************************STACK -- LINKED LIST**************************//
+//        StackLL<Integer> stack = new StackLL<>();
+//        stack.push(1);
+//        stack.push(2);
+//        stack.push(3);
+//        stack.push(4);
+//        stack.display();
+//
+//        stack.pop();
+//        stack.display();
+//
+//        System.out.println(stack.peek());
+        //**************************QUEUE -- LINKED LIST**************************//
+        QueueLL<Integer> queueLL = new QueueLL<>();
+
+        queueLL.enqueue(10);
+        queueLL.enqueue(20);
+        queueLL.enqueue(30);
+
+        queueLL.display();
+        queueLL.dequeue();
+
+        queueLL.display();
+
 
     }
 }

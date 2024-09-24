@@ -3,10 +3,10 @@ public interface StackADT<T> {
     public void push(T element);
 
     //Removes element to the top of the stack
-    public void pop(T element);
+    public T pop();
 
     //Returns element at the top of the stack without removing that element
-    public void peek(T element);
+    public T peek();
 
     //Returns true if stack empty
     public boolean isEmpty();

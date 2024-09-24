@@ -70,6 +70,7 @@ public class StackDemo {
         }
         for (int element : stack) {
             System.out.print(element + " ");
+
         }
 
         System.out.println();
